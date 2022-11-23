@@ -27,13 +27,13 @@ mongoose
     console.log(err.message);
   });
 
-app.use(
-  cors({
-    origin: [`http://localhost:${process.env.PORT}`],
-    methods: ["GET", "POST"],
-    credentials: true,
-  })
-);
+// app.use(
+//   cors({
+//     origin: [`http://localhost:${process.env.PORT}`],
+//     methods: ["GET", "POST"],
+//     credentials: true,
+//   })
+// );
 app.use(cookieParser());
 
 app.use(express.json());
